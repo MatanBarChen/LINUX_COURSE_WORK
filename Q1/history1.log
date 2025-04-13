@@ -1,0 +1,37 @@
+    1  cd ~ && mkdir Linux_Course_Work && cd Linux_Course_Work
+    2  git init
+    3  echo "Matan Bar-Chen, 205927122 > hidden.myid
+touch START
+git add START hidden.myid
+git commit -m "START"
+mkdir DOWNLOADS
+    4  echo "Matan Bar-Chen, 205927122" > hidden.myid
+    5  touch START
+    6  git add START hidden.myid
+    7  git commit -m "initial commit with START and ID"
+    8  mkdir DOWNLOADS
+    9  wget https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+   10  curl -L -o downloads.tar.gz https://github.com/Telhai-Git/LINUX_COURSE_WORK/archive/refs/tags/downloads.tar.gz
+   11  tar -xvzf downloads.tar.gz -C DOWNLOADS --strip-components=1
+   12  file downloads.tar.gz
+   13  rm downloads.tar.gz
+   14  curl -L -o downloads.tar.gz https://github.com/Telhai-Git/LINUX_COURSE_WORK/releases/download/downloads/downloads.tar.gz
+   15  file downloads.tar.gz
+   16  tar -xvzf downloads.tar.gz -C DOWNLOADS --strip-components=1
+   17  rm downloads.tar.gz
+   18  git add DOWNLOADS
+   19  git commit -m "added extracted download contents to DOWNLOADS"
+   20  mkdir DATA CODE
+   21  find DOWNLOADS -name "*.py" -exec cp {} CODE/ \;
+   22  find DOWNLOADS -type f \( -name "*.txt" -o -name "*.csv" -o -name "*.jpg" \) -exec cp {} DATA/ \;
+   23  git checkout -b question_1
+   24  mkdir Q1
+   25  echo "Time: $(date)" >> Q1/q1_output.txt
+   26  echo "USER DETAILS:" >> Q1/q1_output.txt
+   27  grep $(whoami) /etc/passwd >> Q1/q1_output.txt
+   28  echo "REPO: $(git rev-parse --show-toplevel)" >> Q1/q1_output.txt
+   29  echo "BRANCH: $(git branch --show-current)" >> Q1/q1_output.txt
+   30  echo "VERSIONID: $(grep VERSION_ID /etc/os-release | cut -d '=' -f2)" >> Q1/q1_output.txt
+   31  echo "-------------------------------------------" >> Q1/q1_output.txt
+   32  ls -R $(git rev-parse --show-toplevel) >> Q1/q1_output.txt
+   33  history > Q1/history1.log

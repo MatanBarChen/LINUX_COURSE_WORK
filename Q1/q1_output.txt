@@ -1,0 +1,22 @@
+Time: Sun, Apr 13, 2025 12:58:22 PM
+USER DETAILS:
+REPO: C:/Users/Matan/Linux_Course_Work
+BRANCH: question_1
+VERSIONID: 
+-------------------------------------------
+C:/Users/Matan/Linux_Course_Work:
+CODE/
+DATA/
+DOWNLOADS/
+hidden.myid
+Q1/
+START
+
+C:/Users/Matan/Linux_Course_Work/CODE:
+
+C:/Users/Matan/Linux_Course_Work/DATA:
+
+C:/Users/Matan/Linux_Course_Work/DOWNLOADS:
+
+C:/Users/Matan/Linux_Course_Work/Q1:
+q1_output.txt
