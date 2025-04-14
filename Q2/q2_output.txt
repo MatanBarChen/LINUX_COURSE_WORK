@@ -1,0 +1,9 @@
+Array: [1 2 3]
+Sum: 6
+Mean: 2.0
+Array: [1 2 3]
+Sum: 6
+Mean: 2.0
+Array: [1 2 3]
+Sum: 6
+Mean: 2.0
