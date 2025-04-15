@@ -1,0 +1,21 @@
+CSV created.
+     1	Date,Species,Sex,Weight
+Invalid option
+Row added.
+Invalid option
+Invalid option
+Invalid option
+     1	Date,Species,Sex,Weight
+     2	תאריך: 2025-04-14,,Species: OT,
+Row 1 deleted.
+Row 1 weight updated.
+     1	תאריך: 2025-04-14,,Species: OT,
+Row added.
+     1	תאריך: 2025-04-14,,Species: OT,
+     2	2025-04-14,OT,M,23,dog,M,16
+CSV created.
+Row added.
+Row added.
+No matching species found.
+Avg weight: 68
+Avg weight: 68

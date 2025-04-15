@@ -1,0 +1,14 @@
+FROM ubuntu:20.04
+
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y bash coreutils awk nano
+
+COPY animal_menu.sh /app/animal_menu.sh
+COPY animals.csv /app/animals.csv
+
+WORKDIR /app
+
+RUN chmod +x animal_menu.sh
+
+CMD ["bash"]
+
