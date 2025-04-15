@@ -1,0 +1,6 @@
+Rose,50 55 60 65 70,35 40 45 50 55,2.0 2.2 2.5 2.7 3.0
+Tulip,20 30 40 50 60,15 18 20 23 25,1.0 1.2 1.5 1.7 2.0
+Sunflower,60 65 70 75 80,40 42 45 47 50,2.5 2.7 2.9 3.1 3.3
+
+plant_name,height_values,leaf_count_values,dry_weight_values
+
