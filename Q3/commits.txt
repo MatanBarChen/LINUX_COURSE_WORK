@@ -1,0 +1,8 @@
+BugID::2025-04-15 08:55:42:::::
+BugID:236:2025-04-15 08:55:42:dev:a.levi:1:"Encoding issue in XLS export":"Applied UTF-8 BOM"
+BugID:235:2025-04-15 08:55:42:main:y.sasson:2:"Missing author field":"Added field + default fallback"
+BugID:234:2025-04-15 08:55:41:br_1:g.cohen:3:"File name should contain date in header":"Added missing date format validation"
+added Q2 output and requirements
+added git commit history
+added output and history logs for question 1
+initial commit with START and ID

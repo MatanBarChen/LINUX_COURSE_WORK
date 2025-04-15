@@ -1,0 +1,4 @@
+234,br_1,g.cohen,3,"File name should contain date in header","Added missing date format validation"
+235,main,y.sasson,2,"Missing author field","Added field + default fallback"
+236,dev,a.levi,1,"Encoding issue in XLS export","Applied UTF-8 BOM"
+
