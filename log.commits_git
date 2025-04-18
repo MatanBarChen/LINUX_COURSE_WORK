@@ -1,0 +1,96 @@
+commit 6e4b0fd092e7ea5077313c3ed76064fc1f5b13b2
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Fri Apr 18 09:23:14 2025 +0300
+
+    הוספת קבצי שאלה 1
+
+commit 6296973fd10a89d4723451609af4edc0b75120aa
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Wed Apr 16 10:08:18 2025 +0300
+
+    Q5: docker integration finalized
+
+commit f38fc765da60fe97d22f6d1bd63df2afa5c34006
+Merge: 3f1db38 e055333
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Wed Apr 16 09:45:40 2025 +0300
+
+    added Dockerfile and Docker setup for Q5
+
+commit 3f1db38cfd6d6db7d6e6a24b75489bc8b1fae672
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Wed Apr 16 09:44:05 2025 +0300
+
+    added Dockerfile and Docker setup for Q5
+
+commit e05533337288d4740b435c1b021c29de413660b0
+Author: Matan bar-chen <matanbarchen.telhai@gmail.com>
+Date:   Wed Apr 16 08:49:22 2025 +0300
+
+    Create docker-image.yml
+
+commit 48d2b6fc923dbdb88770cf8a4e0260bb741aa9b1
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Tue Apr 15 17:41:25 2025 +0300
+
+    added Q5 scripts and files
+
+commit 8fbc1b018065f333e4d5c546752e1c72bdc75ddc
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Tue Apr 15 11:00:54 2025 +0300
+
+    added Q4 plant visualizations with automation
+
+commit 4a4668047842bfabbdea66cec7cc2f04ea089ce5
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Tue Apr 15 08:56:39 2025 +0300
+
+    added Q3 commit script, csv, and commits log
+
+commit b0e954730a69535e9ed070e953c7d27637356d67
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Tue Apr 15 08:55:42 2025 +0300
+
+    BugID::2025-04-15 08:55:42:::::
+
+commit a924fd06393e0f37dfdeeb488688edd3dc49ccfb
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Tue Apr 15 08:55:42 2025 +0300
+
+    BugID:236:2025-04-15 08:55:42:dev:a.levi:1:"Encoding issue in XLS export":"Applied UTF-8 BOM"
+
+commit fab6ac1335f63051f42efb526c2539c7e96b8ec2
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Tue Apr 15 08:55:42 2025 +0300
+
+    BugID:235:2025-04-15 08:55:42:main:y.sasson:2:"Missing author field":"Added field + default fallback"
+
+commit a1be414d112e381cac80d6f0c3e8cc336d72c895
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Tue Apr 15 08:55:41 2025 +0300
+
+    BugID:234:2025-04-15 08:55:41:br_1:g.cohen:3:"File name should contain date in header":"Added missing date format validation"
+
+commit f8dff9baf9870439c1af22d23ebffb8e07550332
+Author: Matan Bar-Chen <matanbarchen.telhai@gmail.com>
+Date:   Mon Apr 14 09:43:10 2025 +0300
+
+    added Q2 output and requirements
+
+commit 0665e841a9dca629c58ff8893d736335fe07ba9a
+Author: Your Name <fryricenodels@gmail.com>
+Date:   Sun Apr 13 12:59:31 2025 +0300
+
+    added git commit history
+
+commit 4aa172e1af83db231f9fde26c62e5276fc6f722a
+Author: Your Name <fryricenodels@gmail.com>
+Date:   Sun Apr 13 12:59:30 2025 +0300
+
+    added output and history logs for question 1
+
+commit 58a777d41202ac8db7e67a4da24d3b9b536a53ab
+Author: Your Name <fryricenodels@gmail.com>
+Date:   Sun Apr 13 12:42:43 2025 +0300
+
+    initial commit with START and ID
