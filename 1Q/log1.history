@@ -1,0 +1,105 @@
+    1  ls
+    2  cd
+    3  
+    4  #!/bin/bash
+    5  cut -d',' -f1,2,3,4 fish_base.csv > fish_data.csv
+    6  cd /Linux_Course_Work 
+    7  cd ~/Linux_Course_Work
+    8  bash check_q1.sh
+    9  #!/bin/bash
+   10  echo "��� בדיקת שאלה 1"
+   11  # בדיקה 1 – האם אנחנו בתוך תיקיית Work_Course_Linux
+   12  if [[ $(pwd) == *"Work_Course_Linux" ]]; then   echo "✅ מיקום: בתוך Work_Course_Linux"; else   echo "❌ לא בתיקייה Work_Course_Linux"; fi
+   13  # בדיקה 2 – האם Git init בוצע
+   14  if [ -d ".git" ]; then   echo "✅ ריפו קיים"; else   echo "❌ אין ריפו פעיל (חסר git init)"; fi
+   15  # בדיקה 3 – קובץ myid מוסתר עם תוכן
+   16  if [ -f ".myid" ]; then   echo "✅ קובץ .myid קיים";   echo "�� תוכן: $(cat .myid)"; else   echo "❌ קובץ .myid חסר"; fi
+   17  # בדיקה 4 – תקיית DOWNLOADS קיימת
+   18  if [ -d "DOWNLOADS" ]; then   echo "✅ תקיית DOWNLOADS קיימת"; else   echo "❌ תקיית DOWNLOADS חסרה"; fi
+   19  # בדיקה 5 – האם קיימות תקיות DATA ו-CODE
+   20  [ -d "DATA" ] && echo "✅ תקיית DATA קיימת" || echo "❌ DATA חסרה"
+   21  [ -d "CODE" ] && echo "✅ תקיית CODE קיימת" || echo "❌ CODE חסרה"
+   22  # בדיקה 6 – האם קיימים קבצי קוד בתיקיית CODE
+   23  if ls CODE/*.{sh,py,c} 1> /dev/null 2>&1; then   echo "✅ קבצי קוד קיימים ב-CODE"; else   echo "❌ חסרים קבצי קוד ב-CODE"; fi
+   24  # בדיקה 7 – קבצי txt, csv, jpg בתיקיית DATA
+   25  if ls DATA/*.{txt,csv,jpg} 1> /dev/null 2>&1; then   echo "✅ קבצים מסוג מתאים קיימים ב-DATA"; else   echo "❌ DATA ריקה או חסרים סוגי קבצים"; fi
+   26  # בדיקה 8 – ענף בשם 1_question קיים
+   27  if git branch | grep -q "1_question"; then   echo "✅ ענף 1_question קיים"; else   echo "❌ ענף 1_question לא נוצר"; fi
+   28  # בדיקה 9 – קובץ txt.output_1q קיים
+   29  if [ -f "1Q/txt.output_1q" ]; then   echo "✅ קובץ txt.output_1q קיים"; else   echo "❌ קובץ txt.output_1q חסר"; fi
+   30  # בדיקה 10 – קובץ log1.history קיים
+   31  if [ -f "1Q/log1.history" ]; then   echo "✅ קובץ log1.history קיים"; else   echo "❌ קובץ log1.history חסר"; fi
+   32  # בדיקה 11 – קובץ לוג קומיטים קיים
+   33  if [ -f "log.commits_git" ]; then   echo "✅ קובץ log.commits_git קיים"; else   echo "❌ קובץ log.commits_git חסר"; fi
+   34  echo "��� סיום בדיקה. אם הופיעו סימני ❌ – יש לתקן בהתאם."
+   35  cd ~/Linux_course_Work/Q1
+   36  #!/bin/bash
+   37  echo "��� בדיקת שאלה 1"
+   38  # בדיקה 1 – האם אנחנו בתוך תיקיית Work_Course_Linux
+   39  if [[ $(pwd) == *"Work_Course_Linux" ]]; then   echo "✅ מיקום: בתוך Work_Course_Linux"; else   echo "❌ לא בתיקייה Work_Course_Linux"; fi
+   40  # בדיקה 2 – האם Git init בוצע
+   41  if [ -d ".git" ]; then   echo "✅ ריפו קיים"; else   echo "❌ אין ריפו פעיל (חסר git init)"; fi
+   42  # בדיקה 3 – קובץ myid מוסתר עם תוכן
+   43  if [ -f ".myid" ]; then   echo "✅ קובץ .myid קיים";   echo "�� תוכן: $(cat .myid)"; else   echo "❌ קובץ .myid חסר"; fi
+   44  # בדיקה 4 – תקיית DOWNLOADS קיימת
+   45  if [ -d "DOWNLOADS" ]; then   echo "✅ תקיית DOWNLOADS קיימת"; else   echo "❌ תקיית DOWNLOADS חסרה"; fi
+   46  # בדיקה 5 – האם קיימות תקיות DATA ו-CODE
+   47  [ -d "DATA" ] && echo "✅ תקיית DATA קיימת" || echo "❌ DATA חסרה"
+   48  [ -d "CODE" ] && echo "✅ תקיית CODE קיימת" || echo "❌ CODE חסרה"
+   49  # בדיקה 6 – האם קיימים קבצי קוד בתיקיית CODE
+   50  if ls CODE/*.{sh,py,c} 1> /dev/null 2>&1; then   echo "✅ קבצי קוד קיימים ב-CODE"; else   echo "❌ חסרים קבצי קוד ב-CODE"; fi
+   51  # בדיקה 7 – קבצי txt, csv, jpg בתיקיית DATA
+   52  if ls DATA/*.{txt,csv,jpg} 1> /dev/null 2>&1; then   echo "✅ קבצים מסוג מתאים קיימים ב-DATA"; else   echo "❌ DATA ריקה או חסרים סוגי קבצים"; fi
+   53  # בדיקה 8 – ענף בשם 1_question קיים
+   54  if git branch | grep -q "1_question"; then   echo "✅ ענף 1_question קיים"; else   echo "❌ ענף 1_question לא נוצר"; fi
+   55  # בדיקה 9 – קובץ txt.output_1q קיים
+   56  if [ -f "1Q/txt.output_1q" ]; then   echo "✅ קובץ txt.output_1q קיים"; else   echo "❌ קובץ txt.output_1q חסר"; fi
+   57  # בדיקה 10 – קובץ log1.history קיים
+   58  if [ -f "1Q/log1.history" ]; then   echo "✅ קובץ log1.history קיים"; else   echo "❌ קובץ log1.history חסר"; fi
+   59  # בדיקה 11 – קובץ לוג קומיטים קיים
+   60  if [ -f "log.commits_git" ]; then   echo "✅ קובץ log.commits_git קיים"; else   echo "❌ קובץ log.commits_git חסר"; fi
+   61  echo "��� סיום בדיקה. אם הופיעו סימני ❌ – יש לתקן בהתאם."
+   62  git checkout -b 1_question
+   63  bash check_q1.sh
+   64  #!/bin/bash
+   65  echo "��� בדיקת שאלה 1"
+   66  # בדיקה 1 – האם אנחנו בתוך תיקיית Work_Course_Linux
+   67  if [[ $(pwd) == *"Work_Course_Linux" ]]; then   echo "✅ מיקום: בתוך Work_Course_Linux"; else   echo "❌ לא בתיקייה Work_Course_Linux"; fi
+   68  # בדיקה 2 – האם Git init בוצע
+   69  if [ -d ".git" ]; then   echo "✅ ריפו קיים"; else   echo "❌ אין ריפו פעיל (חסר git init)"; fi
+   70  # בדיקה 3 – קובץ myid מוסתר עם תוכן
+   71  if [ -f ".myid" ]; then   echo "✅ קובץ .myid קיים";   echo "�� תוכן: $(cat .myid)"; else   echo "❌ קובץ .myid חסר"; fi
+   72  # בדיקה 4 – תקיית DOWNLOADS קיימת
+   73  if [ -d "DOWNLOADS" ]; then   echo "✅ תקיית DOWNLOADS קיימת"; else   echo "❌ תקיית DOWNLOADS חסרה"; fi
+   74  # בדיקה 5 – האם קיימות תקיות DATA ו-CODE
+   75  [ -d "DATA" ] && echo "✅ תקיית DATA קיימת" || echo "❌ DATA חסרה"
+   76  [ -d "CODE" ] && echo "✅ תקיית CODE קיימת" || echo "❌ CODE חסרה"
+   77  # בדיקה 6 – האם קיימים קבצי קוד בתיקיית CODE
+   78  if ls CODE/*.{sh,py,c} 1> /dev/null 2>&1; then   echo "✅ קבצי קוד קיימים ב-CODE"; else   echo "❌ חסרים קבצי קוד ב-CODE"; fi
+   79  # בדיקה 7 – קבצי txt, csv, jpg בתיקיית DATA
+   80  if ls DATA/*.{txt,csv,jpg} 1> /dev/null 2>&1; then   echo "✅ קבצים מסוג מתאים קיימים ב-DATA"; else   echo "❌ DATA ריקה או חסרים סוגי קבצים"; fi
+   81  # בדיקה 8 – ענף בשם 1_question קיים
+   82  if git branch | grep -q "1_question"; then   echo "✅ ענף 1_question קיים"; else   echo "❌ ענף 1_question לא נוצר"; fi
+   83  # בדיקה 9 – קובץ txt.output_1q קיים
+   84  if [ -f "1Q/txt.output_1q" ]; then   echo "✅ קובץ txt.output_1q קיים"; else   echo "❌ קובץ txt.output_1q חסר"; fi
+   85  # בדיקה 10 – קובץ log1.history קיים
+   86  if [ -f "1Q/log1.history" ]; then   echo "✅ קובץ log1.history קיים"; else   echo "❌ קובץ log1.history חסר"; fi
+   87  # בדיקה 11 – קובץ לוג קומיטים קיים
+   88  if [ -f "log.commits_git" ]; then   echo "✅ קובץ log.commits_git קיים"; else   echo "❌ קובץ log.commits_git חסר"; fi
+   89  echo "��� סיום בדיקה. אם הופיעו סימני ❌ – יש לתקן בהתאם."
+   90  clear
+   91  cd ~/Linux_course_Work
+   92  cd
+   93  cd ~/Linux_course_Work
+   94  git init
+   95  find DOWNLOADS -type f \( -name "*.sh" -o -name "*.py" -o -name "*.c" \) -exec cp {} CODE \;
+   96  find DOWNLOADS -type f \( -name "*.txt" -o -name "*.csv" -o -name "*.jpg" \) -exec cp {} DATA \;
+   97  mkdir -p 1Q
+   98  echo "Time : $(date)" > 1Q/txt.output_1q
+   99  echo "USER DETAILS: $(grep $(whoami) /etc/passwd)" >> 1Q/txt.output_1q
+  100  echo "REPO: $(pwd)" >> 1Q/txt.output_1q
+  101  echo "BRANCH: $(git branch --show-current)" >> 1Q/txt.output_1q
+  102  echo "VERSIONID: $(grep VERSION_ID /etc/os-release | cut -d= -f2 | tr -d '\"')" >> 1Q/txt.output_1q
+  103  echo "-------------------------------------------" >> 1Q/txt.output_1q
+  104  ls -R >> 1Q/txt.output_1q
+  105  history > 1Q/log1.history
